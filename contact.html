@@ -1,0 +1,82 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" src="contact_val.js"></script>
+<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.anchor{margin-top:20px;color:yellow;}
+</style>
+
+</head>
+<body>
+<header>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="height:80px">
+ <div class="container-fluid">
+  <div class="navbar-header collapse navbar-collapse">
+ <a class="navbar-brand" href="index.php"><img class="img-circle" src="main icon.jpg" alt="main icon" width="60px" height="60px"></a>
+ </div>
+ <ul class="nav navbar-nav">
+     <li><a class="anchor" href="index.php"><h4>Padoc.com</h4></a></li>
+ <li><a class="anchor" href="index.php">Home</a></li>
+ <li class="dropdown">
+ <a class="dropdown-toggle anchor" data-toggle="dropdown" href="#">Services
+ <span class="caret"></span></a>
+ <ul class="dropdown-menu">
+ <li><a href="#">Book Appointment</a></li>
+ <li><a href="#">View Doctors</a></li>
+ </ul>
+ </li>
+ <li><a class="anchor" href="about.html">About</a></li>
+ <li class="active"><a class="anchor" href="contact.html">Contact</a></li>
+ </ul>
+ <ul class="nav navbar-nav navbar-right">
+<li><a class="anchor" href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+<li><a class="anchor" href="log modules.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+</nav>
+</header>
+<section id="contact">
+			<div class="section-content">
+				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+							</div>
+			<div class="contact-section">
+			<div class="container">
+				<form onsubmit="return val(this)" href="#">
+					<div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				<label for="exampleInputUsername">Your name</label>
+					    	<input type="number" min=1000000000 max=9999999999 class="form-control" name="name" placeholder=" Enter Name" required>
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="exampleInputEmail">Email Address</label>
+					    	<input type="email" class="form-control" name="exampleInputEmail" placeholder=" Enter Email id">
+					  	</div>	
+					  
+			  		</div>
+			  		<div class="col-md-6">
+			  			<div class="form-group">
+			  				<label for ="description"> Message</label>
+			  			 	<textarea  class="form-control" name="description" placeholder="Enter Your Message"></textarea>
+			  			</div>
+			  			<div>
+
+			  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  			</div>
+			  			
+					</div>
+				</form>
+			</div>
+		</section>
+
+</body>
+</html>

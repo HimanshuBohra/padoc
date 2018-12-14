@@ -1,0 +1,74 @@
+<?php
+    include("connection.php");
+?>
+<html>
+<head>
+
+<title>
+Doctor Appointment
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="appoint.css">
+</head>
+<body>
+<form method="post" action="appoint.php">
+<fieldset>
+<legend>Appointment Details</legend>
+<table cellspacing="10" cellpadding="15" align="center">
+<tr>
+<td colspan="3" align="center">Enter Patient Name</td>
+</tr>
+<tr>
+<td colspan="3"><input class="inputs" type="text" name="pn" placeholder="Patients' Full Name" required></td>
+</tr>
+<tr>
+<td colspan="3" align="center">Address</td>
+</tr>
+<tr>
+<td colspan="3"><input class="inputs" type="text" name="padd" placeholder="Patient's address" required></td>
+</tr>
+<tr>
+<td colspan="3" align="center">Email Address</td>
+</tr>
+<tr>
+<td colspan="3"><input class="inputs" type="text" name="pemail" placeholder="example@xyz.com" required></td>
+</tr>
+</fieldset>
+<tr>
+<td colspan="3" align="center">Date of Appointment</td>
+</tr>
+<tr>
+<td colspan="3"><input type="date" name ="date" class="inputs"></td>
+<tr>
+<td colspan="3">
+Select the Doctor type you want to consult
+</td>
+</tr>
+<td colspan="3">
+<select name="doctype" class="inputs">
+										<option value="">&nbsp</option>
+										<option value="Heart Specialist">Heart Specialist</option>
+										<option value="Bones Specialist">Bones Specialist</option>
+										<option value="Skin Specialist">Skin Specialist</option>
+										<option value="Neurologist">Neurologist</option>
+										<option value="Gynecologists">Gynecologists</option>
+										<option value="Child Specialist">Child Specialist</option>
+
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<input type="submit" value="GET APPOINTMENT" name="submit">
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+</body>
+</html>

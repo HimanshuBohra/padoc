@@ -1,0 +1,22 @@
+<?php
+	include("connecetion.php");
+	$docname = $_POST["dname"];
+	$phone = $_POST["phone"];
+	$address = $_POST["address"];
+	$email = $_POST["email"];
+	$quali = $_POST["doctype"];
+	$pass = $_POST["pass"];
+	if(isset($_POST["submit"]))
+	{
+		$sql = "INSERT INTO doctor ('dname', 'dphone', 'dadd', 'demail', 'dquali', 'dpass') VALUES ('$docname', '$phone', '$address', '$email', '$quali', '$pass')";
+		$res = mysqli_query($conn, $sql);
+		if($res)
+		{
+			echo "<script>alert('Doctor Added Successfully');</script>";
+		}
+		else
+		{
+			echo "<script>alert('Unsuceessfull - Adding Doctor');</script>";
+		}
+	}
+?>
